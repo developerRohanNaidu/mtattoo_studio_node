@@ -1,0 +1,206 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "admin-panal-be",
+    "collectionId": "00a80ad7-c5fc-47e5-bb3c-00fef6343623",
+    "dateExported": "2024-10-24T18:33:31.733Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "e40135b3-e29b-4974-b3d2-062213fd1f62",
+            "colId": "00a80ad7-c5fc-47e5-bb3c-00fef6343623",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:4000/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-10-16T14:26:34.511Z",
+            "modified": "2024-10-22T16:12:00.766Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\" : \"admin-1\",\n  \"password\" : \"pass1\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "057d496e-9bd9-4030-9ec4-21b91d6b8a89",
+            "colId": "00a80ad7-c5fc-47e5-bb3c-00fef6343623",
+            "containerId": "",
+            "name": "add-sale",
+            "url": "http://localhost:4000/api/add-sale",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-10-16T15:14:59.230Z",
+            "modified": "2024-10-16T15:29:50.541Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Miwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzI5MDkyNTIyLCJleHAiOjE3MjkwOTYxMjJ9.f3VCmgPRtL4ieA0JYwrRSW-mjWbeWb0NboMM7-NnD_M"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"samplereq\" : \"sameple\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "84ccd4eb-d52f-4b9c-860a-5fc149b12d0c",
+            "colId": "00a80ad7-c5fc-47e5-bb3c-00fef6343623",
+            "containerId": "",
+            "name": "add-super-admin",
+            "url": "http://localhost:4000/auth/add-super-admin",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-10-20T12:03:13.126Z",
+            "modified": "2024-10-20T12:05:36.705Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"s-admin-1\",\n  \"password\": \"pass1\",\n  \"role\": \"super-admin\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "6ea323ad-7626-4634-8fcd-9ed06d319a33",
+            "colId": "00a80ad7-c5fc-47e5-bb3c-00fef6343623",
+            "containerId": "",
+            "name": "add-admin",
+            "url": "http://localhost:4000/api/admins/",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-10-20T13:05:13.551Z",
+            "modified": "2024-10-22T16:12:28.555Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzE3Y2U3M2JkMzA1YzhmMjU0Njg5MjUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Mjk2MTM1MjAsImV4cCI6MTcyOTY5OTkyMH0.LkEVZ8sl7j8xHjRDiATLPZFEjaYBc_u_me9A1iNIlbI"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"admddin-1ss\",\n  \"password\": \"pass1\",\n  \"role\": \"admin\",\n  \"shopIds\" : [\"6717baf4213a813231d7b44b\"]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "db41272c-2f62-42bc-b885-8cf3be4a14dd",
+            "colId": "00a80ad7-c5fc-47e5-bb3c-00fef6343623",
+            "containerId": "",
+            "name": "add-shop",
+            "url": "http://localhost:4000/api/shops/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-10-22T14:25:33.203Z",
+            "modified": "2024-10-24T17:52:13.598Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzE3Y2U3M2JkMzA1YzhmMjU0Njg5MjUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Mjk3OTIzMTAsImV4cCI6MTcyOTg3ODcxMH0.DhO-gYpNJo8qoguYykYoxUw1GXpswM0dXJ52GabOlFE"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"shopName\" : \"shop003\",\n  \"location\" : \"city1\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "8c3c91db-7b6a-4a1d-bbdc-ecb0985a8bb1",
+            "colId": "00a80ad7-c5fc-47e5-bb3c-00fef6343623",
+            "containerId": "",
+            "name": "add-customer",
+            "url": "http://localhost:4000/api/customers/add",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-10-24T17:55:35.700Z",
+            "modified": "2024-10-24T18:00:25.473Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzE3Y2U3M2JkMzA1YzhmMjU0Njg5MjUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Mjk3OTIzMTAsImV4cCI6MTcyOTg3ODcxMH0.DhO-gYpNJo8qoguYykYoxUw1GXpswM0dXJ52GabOlFE"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"firstName\": \"giri\",\n  \"lastName\": \"pawar\",\n  \"email\": \"abc@gm.co\",\n  \"phoneNumber\": \"234234\",\n  \"dateOfBirth\": \"1990-01-01T00:00:00.000Z\",\n  \"gender\": \"Male\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "bfa8610e-4ead-48c0-b735-74514d8dae5b",
+            "colId": "00a80ad7-c5fc-47e5-bb3c-00fef6343623",
+            "containerId": "",
+            "name": "add-service",
+            "url": "http://localhost:4000/api/services/add",
+            "method": "POST",
+            "sortNum": 85000,
+            "created": "2024-10-24T18:16:42.860Z",
+            "modified": "2024-10-24T18:22:43.755Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzE3Y2U3M2JkMzA1YzhmMjU0Njg5MjUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Mjk3OTIzMTAsImV4cCI6MTcyOTg3ODcxMH0.DhO-gYpNJo8qoguYykYoxUw1GXpswM0dXJ52GabOlFE"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"serviceName\": \"Circle Shadow\",\n  \"description\": \"circle shape style shade\",\n  \"price\": 55,\n  \"createdBy\": \"6717ce73bd305c8f25468925\",\n  \"shopId\": \"6717b6c7c37377d60b9e04af\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "df9b4809-e784-4c6b-98df-7ca86ce12fe6",
+            "colId": "00a80ad7-c5fc-47e5-bb3c-00fef6343623",
+            "containerId": "",
+            "name": "get-All-customers",
+            "url": "http://localhost:4000/api/customers/",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-10-24T18:12:09.629Z",
+            "modified": "2024-10-24T18:12:48.476Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzE3Y2U3M2JkMzA1YzhmMjU0Njg5MjUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Mjk3OTIzMTAsImV4cCI6MTcyOTg3ODcxMH0.DhO-gYpNJo8qoguYykYoxUw1GXpswM0dXJ52GabOlFE"
+                }
+            ]
+        },
+        {
+            "_id": "6fbb3013-0b97-4e20-a3b5-25fbbfe2c7d8",
+            "colId": "00a80ad7-c5fc-47e5-bb3c-00fef6343623",
+            "containerId": "",
+            "name": "get-customer-by-ID",
+            "url": "http://localhost:4000/api/customers/671a8cb7cf3f118a0a53f4f3",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-10-24T18:15:37.245Z",
+            "modified": "2024-10-24T18:16:23.387Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzE3Y2U3M2JkMzA1YzhmMjU0Njg5MjUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Mjk3OTIzMTAsImV4cCI6MTcyOTg3ODcxMH0.DhO-gYpNJo8qoguYykYoxUw1GXpswM0dXJ52GabOlFE"
+                }
+            ]
+        },
+        {
+            "_id": "e95e288d-5d53-4dbb-9d69-27c63feb016b",
+            "colId": "00a80ad7-c5fc-47e5-bb3c-00fef6343623",
+            "containerId": "",
+            "name": "get-services-by-shopID",
+            "url": "http://localhost:4000/api/services/shop/6717b6c7c37377d60b9e04af",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2024-10-24T18:25:32.964Z",
+            "modified": "2024-10-24T18:27:13.088Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NzE3Y2U3M2JkMzA1YzhmMjU0Njg5MjUiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Mjk3OTIzMTAsImV4cCI6MTcyOTg3ODcxMH0.DhO-gYpNJo8qoguYykYoxUw1GXpswM0dXJ52GabOlFE"
+                }
+            ]
+        }
+    ],
+    "ref": "5_jk9LKRgkPhHEccRNh7vCukKv86PFWr79Z90Y9VstW0WTeVriwDxb4VMN-aKc9OH-iZYdv821siilUnHAO7pg"
+}
